@@ -1,4 +1,15 @@
 language: objective-c
+osx_image: xcode10.1
+
+before_install:
+  - env
+  - locale
+  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+  - xcpretty --version
+  - xcodebuild -version
+  - xcodebuild -showsdks
+
+
 xcode_project: testCi.xcodeproj
 xcode_scheme: testCiTests
 xcode_destination: platform=iOS Simulator,OS=10.1,name=iPad Pro (9.7-inch)
