@@ -2,7 +2,7 @@
 
 a ci test project
 
-.. |travis|
+    |travis|
 
 .. |travis| image:: https://img.shields.io/travis/xuzhiming/testCi/master.svg?style=flat-square&label=ios
     :target: https://travis-ci.org/xuzhiming/testCi
