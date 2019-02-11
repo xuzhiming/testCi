@@ -4,3 +4,4 @@
 
 #gem 'fastlane-plugin-fir'
 gem 'fastlane-plugin-firim'
+#gem 'fastlane-plugin-dingtalk'
