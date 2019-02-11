@@ -14,18 +14,10 @@
 		046C4BF2220F024F009C3BDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046C4BF0220F024F009C3BDF /* LaunchScreen.storyboard */; };
 		046C4BF5220F024F009C3BDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C4BF4220F024F009C3BDF /* main.m */; };
 		046C4BFF220F024F009C3BDF /* testCiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C4BFE220F024F009C3BDF /* testCiTests.m */; };
-		046C4C0A220F024F009C3BDF /* testCiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046C4C09220F024F009C3BDF /* testCiUITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		046C4BFB220F024F009C3BDF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 046C4BDA220F024C009C3BDF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 046C4BE1220F024C009C3BDF;
-			remoteInfo = testCi;
-		};
-		046C4C06220F024F009C3BDF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 046C4BDA220F024C009C3BDF /* Project object */;
 			proxyType = 1;
@@ -48,9 +40,7 @@
 		046C4BFA220F024F009C3BDF /* testCiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testCiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		046C4BFE220F024F009C3BDF /* testCiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testCiTests.m; sourceTree = "<group>"; };
 		046C4C00220F024F009C3BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		046C4C05220F024F009C3BDF /* testCiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testCiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		046C4C09220F024F009C3BDF /* testCiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testCiUITests.m; sourceTree = "<group>"; };
-		046C4C0B220F024F009C3BDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F3DF772210648900BEC6BD /* SnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,22 +58,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		046C4C02220F024F009C3BDF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		046C4BD9220F024C009C3BDF = {
 			isa = PBXGroup;
 			children = (
+				04F3DF772210648900BEC6BD /* SnapshotHelper.swift */,
 				046C4BE4220F024C009C3BDF /* testCi */,
 				046C4BFD220F024F009C3BDF /* testCiTests */,
-				046C4C08220F024F009C3BDF /* testCiUITests */,
 				046C4BE3220F024C009C3BDF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,7 +76,6 @@
 			children = (
 				046C4BE2220F024C009C3BDF /* testCi.app */,
 				046C4BFA220F024F009C3BDF /* testCiTests.xctest */,
-				046C4C05220F024F009C3BDF /* testCiUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,15 +103,6 @@
 				046C4C00220F024F009C3BDF /* Info.plist */,
 			);
 			path = testCiTests;
-			sourceTree = "<group>";
-		};
-		046C4C08220F024F009C3BDF /* testCiUITests */ = {
-			isa = PBXGroup;
-			children = (
-				046C4C09220F024F009C3BDF /* testCiUITests.m */,
-				046C4C0B220F024F009C3BDF /* Info.plist */,
-			);
-			path = testCiUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,30 +143,13 @@
 			productReference = 046C4BFA220F024F009C3BDF /* testCiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		046C4C04220F024F009C3BDF /* testCiUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 046C4C14220F024F009C3BDF /* Build configuration list for PBXNativeTarget "testCiUITests" */;
-			buildPhases = (
-				046C4C01220F024F009C3BDF /* Sources */,
-				046C4C02220F024F009C3BDF /* Frameworks */,
-				046C4C03220F024F009C3BDF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				046C4C07220F024F009C3BDF /* PBXTargetDependency */,
-			);
-			name = testCiUITests;
-			productName = testCiUITests;
-			productReference = 046C4C05220F024F009C3BDF /* testCiUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		046C4BDA220F024C009C3BDF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = HZMC;
 				TargetAttributes = {
@@ -201,10 +157,6 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					046C4BF9220F024F009C3BDF = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 046C4BE1220F024C009C3BDF;
-					};
-					046C4C04220F024F009C3BDF = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 046C4BE1220F024C009C3BDF;
 					};
@@ -225,7 +177,6 @@
 			targets = (
 				046C4BE1220F024C009C3BDF /* testCi */,
 				046C4BF9220F024F009C3BDF /* testCiTests */,
-				046C4C04220F024F009C3BDF /* testCiUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,13 +193,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		046C4BF8220F024F009C3BDF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		046C4C03220F024F009C3BDF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -276,14 +220,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		046C4C01220F024F009C3BDF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				046C4C0A220F024F009C3BDF /* testCiUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,11 +227,6 @@
 			isa = PBXTargetDependency;
 			target = 046C4BE1220F024C009C3BDF /* testCi */;
 			targetProxy = 046C4BFB220F024F009C3BDF /* PBXContainerItemProxy */;
-		};
-		046C4C07220F024F009C3BDF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 046C4BE1220F024C009C3BDF /* testCi */;
-			targetProxy = 046C4C06220F024F009C3BDF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -509,42 +440,6 @@
 			};
 			name = Release;
 		};
-		046C4C15220F024F009C3BDF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JPG7HDP2B8;
-				INFOPLIST_FILE = testCiUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hzmc.testCiUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = testCi;
-			};
-			name = Debug;
-		};
-		046C4C16220F024F009C3BDF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JPG7HDP2B8;
-				INFOPLIST_FILE = testCiUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hzmc.testCiUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = testCi;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -571,15 +466,6 @@
 			buildConfigurations = (
 				046C4C12220F024F009C3BDF /* Debug */,
 				046C4C13220F024F009C3BDF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		046C4C14220F024F009C3BDF /* Build configuration list for PBXNativeTarget "testCiUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				046C4C15220F024F009C3BDF /* Debug */,
-				046C4C16220F024F009C3BDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

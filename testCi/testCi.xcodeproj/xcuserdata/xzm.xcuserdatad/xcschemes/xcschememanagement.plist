@@ -6,6 +6,8 @@
 	<dict>
 		<key>testCi.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
@@ -23,6 +25,11 @@
 			<true/>
 		</dict>
 		<key>046C4C04220F024F009C3BDF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04F3DF8B2210684900BEC6BD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
