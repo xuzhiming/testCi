@@ -1,4 +1,4 @@
-setup_travis
+#setup_travis
 
 language: objective-c
 osx_image: xcode10.1
